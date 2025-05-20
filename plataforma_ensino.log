@@ -1,0 +1,22 @@
+2025-05-17 22:00:52,527 - INFO - Dados carregados com sucesso
+2025-05-17 22:02:42,447 - INFO - Dados carregados com sucesso
+2025-05-17 22:02:48,660 - ERROR - Erro inesperado no cadastro: 'termos_uso'
+2025-05-17 22:02:56,753 - INFO - Dados carregados com sucesso
+2025-05-17 22:03:00,873 - ERROR - Erro inesperado no cadastro: 'termos_uso'
+2025-05-17 22:03:53,333 - WARNING - Falha no login: Senha incorreta!
+2025-05-17 22:03:56,492 - ERROR - Erro inesperado no cadastro: 'termos_uso'
+2025-05-17 22:05:13,725 - INFO - Dados salvos com sucesso
+2025-05-17 22:06:17,631 - INFO - Dados salvos com sucesso
+2025-05-17 22:06:17,632 - INFO - Log de privacidade: Cadastro de usuário - Novo aluno cadastrado: Caique Brito
+2025-05-17 22:06:17,632 - INFO - Novo usuário cadastrado: Caique Brito
+2025-05-17 22:06:32,183 - INFO - Dados salvos com sucesso
+2025-05-17 22:06:32,184 - INFO - Log de privacidade: Login - Usuário Caique Brito fez login
+2025-05-17 22:06:32,184 - INFO - Usuário Caique Brito fez login
+2025-05-18 18:39:49,461 - INFO - Dados carregados com sucesso
+2025-05-18 18:41:43,712 - WARNING - Erro no cadastro: O campo deve ter no máximo 20 caracteres.
+2025-05-18 18:42:11,148 - INFO - Backup criado com sucesso: backups\plataforma_backup_20250518_184211.zip
+2025-05-18 18:42:11,151 - INFO - Dados salvos com sucesso
+2025-05-18 18:42:56,438 - WARNING - Erro no cadastro: Email inválido.
+2025-05-18 18:43:41,254 - INFO - Dados carregados com sucesso
+2025-05-18 18:49:51,330 - INFO - Dados carregados com sucesso
+2025-05-18 18:54:42,139 - INFO - Dados carregados com sucesso

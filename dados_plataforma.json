@@ -1,0 +1,77 @@
+{
+    "usuarios": {
+        "aluno": {
+            "senha": "e10adc3949ba59abbe56e057f20f883e",
+            "tipo": "aluno",
+            "cursos_matriculados": [],
+            "progresso": {},
+            "mensagens": {},
+            "dados_pessoais": {
+                "nome": "Aluno Teste",
+                "email": "aluno@teste.com",
+                "data_nascimento": "01/01/2000",
+                "cpf": "000.000.000-00"
+            },
+            "termos_aceitos": true,
+            "data_cadastro": "01/01/2023",
+            "ultimo_acesso": "01/01/2023"
+        },
+        "prof": {
+            "senha": "e10adc3949ba59abbe56e057f20f883e",
+            "tipo": "professor",
+            "cursos_criados": [],
+            "mensagens": {},
+            "dados_pessoais": {
+                "nome": "Professor Teste",
+                "email": "prof@teste.com",
+                "data_nascimento": "01/01/1980",
+                "cpf": "111.111.111-11"
+            },
+            "termos_aceitos": true,
+            "data_cadastro": "01/01/2023",
+            "ultimo_acesso": "01/01/2023"
+        }
+    },
+    "cursos": {
+        "iniciante": {
+            "Introdução ao Python": {
+                "descricao": "Curso básico de Python para iniciantes",
+                "dificuldade": "Fácil",
+                "professor": "prof",
+                "licoes": {
+                    "1. Introdução": {
+                        "conteudo": "Bem-vindo ao curso de Python! Nesta lição você aprenderá os conceitos básicos.",
+                        "concluida": false
+                    },
+                    "2. Primeiros Passos": {
+                        "conteudo": "Aqui você vai escrever seu primeiro programa em Python.",
+                        "concluida": false
+                    }
+                },
+                "avaliacoes": [
+                    {
+                        "titulo": "Quiz Inicial",
+                        "perguntas": [
+                            {
+                                "pergunta": "O que é Python?",
+                                "opcoes": [
+                                    "Linguagem de programação",
+                                    "Tipo de cobra",
+                                    "Editor de texto"
+                                ],
+                                "resposta": 0
+                            }
+                        ]
+                    }
+                ],
+                "avisos": []
+            }
+        }
+    },
+    "logs_privacidade": [],
+    "termos_uso": {
+        "versao": "1.0",
+        "data_implementacao": "01/01/2023",
+        "conteudo": "Termos de uso da plataforma..."
+    }
+}
