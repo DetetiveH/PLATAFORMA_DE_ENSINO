@@ -1,168 +1,133 @@
-Plataforma de Ensino Online - LEGIONARIO.PY
-📝 Descrição
-Este é um sistema completo de plataforma de ensino online desenvolvido em Python, que permite:
-
-Cadastro e autenticação de usuários (alunos e professores)
-
-Gerenciamento de cursos, lições e avaliações
-
-Acompanhamento de progresso dos alunos
-
-Sistema de mensagens e avisos
-
-Backup e recuperação de dados
-
-Conformidade com LGPD (Lei Geral de Proteção de Dados)
-
-🛠️ Funcionalidades Principais
-👨‍🎓 Para Alunos:
-Matrícula em cursos disponíveis
-
-Acesso ao conteúdo das aulas
-
-Realização de avaliações
-
-Acompanhamento do progresso
-
-Visualização de mensagens e avisos
-
-👨‍🏫 Para Professores:
-Criação e gerenciamento de cursos
-
-Adição/edição de lições e avaliações
-
-Postagem de avisos nos cursos
-
-Envio de mensagens para alunos
-
-Monitoramento do progresso dos alunos
-
-🔧 Administrativas:
-Sistema de backup automático
-
-Restauração de backups
-
-Logs detalhados de todas as ações
-
-Gerenciamento de privacidade (LGPD)
-
-⚙️ Tecnologias e Bibliotecas Utilizadas
-Python 3.x
-
-Bibliotecas padrão:
-
-json - Para armazenamento e manipulação de dados
-
-os - Para operações do sistema de arquivos
-
-datetime - Para manipulação de datas e horários
-
-hashlib - Para criptografia de senhas (MD5)
-
-logging - Para registro de logs do sistema
-
-re - Para validação de expressões regulares
-
-shutil e zipfile - Para sistema de backup
-
-sys - Para controle do sistema
-
-pathlib - Para manipulação de caminhos de arquivos
-
-📂 Estrutura de Arquivos
-LEGIONARIO.PY - Arquivo principal do sistema
-
-dados_plataforma.json - Banco de dados em formato JSON
-
-plataforma_ensino.log - Arquivo de logs do sistema
-
-backups/ - Diretório para armazenamento de backups
-
-🔒 Segurança e Privacidade (LGPD)
-O sistema inclui diversos recursos para conformidade com a LGPD:
-
-Criptografia de senhas (MD5)
-
-Anonimização de dados ao excluir contas
-
-Registro detalhado de todas as ações sensíveis
-
-Política de privacidade clara durante o cadastro
-
-Controle de acesso aos dados pessoais
-
-Possibilidade de edição e exclusão de dados
-
-🚀 Como Executar
-Certifique-se de ter Python 3.x instalado
-
-Execute o arquivo principal:
-
-bash
-python LEGIONARIO.PY
-Use as credenciais padrão para teste:
-
-Aluno: usuário "aluno", senha "123456"
-
-Professor: usuário "prof", senha "123456"
-
-🔄 Sistema de Backup
-O sistema possui um robusto mecanismo de backup que:
-
-Cria backups automáticos antes de operações críticas
-
-Armazena até 5 backups (rotação automática)
-
-Permite restauração manual de backups anteriores
-
-Compacta os dados em formato ZIP para economia de espaço
-
-📊 Estrutura de Dados
-O sistema armazena informações em um formato JSON estruturado:
-
-usuarios: Dados de alunos e professores
-
-cursos: Informações sobre cursos, lições e avaliações
-
-logs_privacidade: Registro de ações sensíveis
-
-termos_uso: Versão atual dos termos de uso
-
-📋 Menu Principal
-Fazer login - Acessar como aluno ou professor
-
-Cadastrar novo usuário - Registrar novo aluno ou professor
-
-Visualizar cursos disponíveis - Listar todos os cursos
-
-Backup do sistema - Gerenciar cópias de segurança
-
-Sobre o sistema - Informações sobre a plataforma
-
-Sair - Encerrar o programa
-
-📈 Melhorias Futuras
-Implementar criptografia mais segura (bcrypt)
-
-Adicionar sistema de recuperação de senha
-
-Implementar interface gráfica (Tkinter/PyQt)
-
-Adicionar suporte a upload de arquivos (vídeos, PDFs)
-
-Implementar sistema de certificados
-
-Adicionar relatórios estatísticos avançados
-
-⚠️ Limitações Atuais
-Armazenamento em arquivo JSON (não escalável para muitos usuários)
-
-Criptografia MD5 (considerada fraca para produção)
-
-Interface apenas em modo texto
-
-Ausência de testes automatizados
-
-📜 Licença
-Este projeto é destinado para fins educacionais. O código pode ser livremente utilizado e modificado, desde que mantidos os créditos ao autor original.
-
+<h2 align="center">📚 Plataforma de Ensino Online - <code>LEGIONARIO.PY</code></h2>
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python&logoColor=white" height="35" />
+  <img src="https://img.shields.io/badge/LGPD-Conformidade-green?style=for-the-badge" height="35" />
+  <img src="https://img.shields.io/badge/Modo%20Texto-100%25-lightgrey?style=for-the-badge" height="35" />
+  <img src="https://img.shields.io/badge/JSON-Armazenamento-lightblue?style=for-the-badge" height="35" />
+  <img src="https://img.shields.io/badge/Linux-Otimizado-critical?style=for-the-badge" height="35" />
+</div>
+
+<img align="right" height="180" src="https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" />
+
+<hr/>
+
+<h3>📝 Descrição</h3>
+<p><code>LEGIONARIO.PY</code> é uma plataforma educacional inclusiva, desenvolvida em Python com interface em modo texto (console), voltada à inclusão digital de comunidades vulneráveis. Oferece ensino de lógica computacional, segurança digital e programação em Python, com foco na simplicidade, segurança e acessibilidade.</p>
+
+<ul>
+  <li>Interface leve para computadores básicos</li>
+  <li>Armazenamento em arquivos JSON</li>
+  <li>Segurança com criptografia e conformidade com a LGPD</li>
+  <li>Controle de acesso por perfil: aluno e professor</li>
+</ul>
+
+<h3>🎯 Objetivos</h3>
+<ul>
+  <li>Capacitar em pensamento lógico computacional e Python</li>
+  <li>Reduzir a exclusão digital com ética e tecnologia</li>
+  <li>Oferecer um ambiente educacional seguro e acessível</li>
+</ul>
+
+<h3>👨‍🎓 Funcionalidades para Alunos</h3>
+<ul>
+  <li>Matrícula em cursos e acesso a lições</li>
+  <li>Realização de avaliações com correção automática</li>
+  <li>Acompanhamento de progresso com relatórios</li>
+  <li>Envio de mensagens para professores</li>
+</ul>
+
+<h3>👨‍🏫 Funcionalidades para Professores</h3>
+<ul>
+  <li>Criação e edição de cursos e avaliações</li>
+  <li>Postagem de avisos para alunos por curso</li>
+  <li>Monitoramento de desempenho dos alunos</li>
+</ul>
+
+<h3>🔧 Funcionalidades Administrativas</h3>
+<ul>
+  <li>Logs de atividades com RotatingFileHandler</li>
+  <li>Backups automáticos e restauração</li>
+  <li>Anonimização de dados e autoexclusão</li>
+  <li>Gerenciamento de consentimento (LGPD)</li>
+</ul>
+
+<h3>⚙️ Tecnologias e Bibliotecas</h3>
+<div>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="45" />
+  <img width="12" />
+  <img src="https://img.shields.io/badge/JSON-Banco%20de%20Dados-lightgrey?style=for-the-badge" height="30" />
+  <img width="12" />
+  <img src="https://img.shields.io/badge/Console-Interface-informational?style=for-the-badge" height="30" />
+</div>
+
+<ul>
+  <li>Python 3.8+</li>
+  <li>json, os, datetime, hashlib, logging</li>
+  <li>PBKDF2-SHA256 com salt para senhas</li>
+  <li>Criptografia AES (futuramente)</li>
+</ul>
+
+<h3>📂 Estrutura do Projeto</h3>
+<pre>
+📁 legionariopy/
+ ┣ 📄 plataforma.py
+ ┣ 📄 dados_plataforma.json
+ ┣ 📁 backups/
+ ┣ 📄 log_acessos.txt
+ ┗ 📄 README.md
+</pre>
+
+<h3>🔐 Segurança e Conformidade com LGPD</h3>
+<ul>
+  <li>Criptografia de senhas</li>
+  <li>Validação rigorosa de dados</li>
+  <li>Anonimização em exclusões de conta</li>
+  <li>Registro de logs sensíveis</li>
+  <li>Consentimento explícito</li>
+</ul>
+
+<h3>📊 Estatísticas e Relatórios</h3>
+<ul>
+  <li>Relatórios por aluno e por turma</li>
+  <li>Cálculo de média, moda e mediana</li>
+  <li>Exibição de progresso em texto</li>
+</ul>
+
+<h3>🖥️ Execução e Infraestrutura</h3>
+<ul>
+  <li>Sistema local em modo console</li>
+  <li>Compatível com Linux, Windows e macOS</li>
+  <li>Armazenamento local (JSON)</li>
+  <li>Backups automáticos com cron (Linux)</li>
+</ul>
+
+<h3>🌱 Ética e Sustentabilidade</h3>
+<ul>
+  <li>Uso de equipamentos recondicionados</li>
+  <li>Baixo consumo de energia</li>
+  <li>Descarte adequado de e-lixo</li>
+</ul>
+
+<h3>🌐 Direitos Humanos e Inclusão</h3>
+<ul>
+  <li>Educação como direito humano</li>
+  <li>Cidadania digital ativa</li>
+  <li>Envolvimento comunitário e empoderamento</li>
+</ul>
+
+<h3>🚀 Roadmap Futuro</h3>
+<ul>
+  <li>Interface gráfica com Flask/Django</li>
+  <li>Banco de dados SQLite</li>
+  <li>Relatórios gráficos em PDF/HTML</li>
+  <li>Sincronização com nuvem</li>
+</ul>
+
+<h3>📚 Projeto Acadêmico</h3>
+<p>
+  Desenvolvido como parte do <strong>PIM 1º semestre (2025)</strong><br/>
+  Curso de <strong>Análise e Desenvolvimento de Sistemas (ADS)</strong><br/>
+  <em>Universidade Paulista - UNIP</em><br/>
+  Por: <strong>Caique Brito Mascarenhas Silva</strong>
+</p>
